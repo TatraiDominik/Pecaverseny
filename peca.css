@@ -71,8 +71,9 @@ tr,th,td{
     background: rgb(243,239,224);
     background: linear-gradient(0deg, rgba(243,239,224,1) 0%, rgba(213,209,197,1) 0%, rgba(209,205,193,1) 23%, rgba(95,94,91,1) 95%, rgba(67,66,66,1) 100%, rgba(34,34,34,1) 100%);
 }
-
-
+.cimsor{
+    background-color: #6ECCAF;
+}
 
 .kozepsok{
     background-color:#F3EFE0 ;
@@ -218,7 +219,4 @@ tr,th,td{
     background-size: 100%;
     background-position-y: -70px;
     background-repeat: no-repeat;
-}
-#faj{
-    background-color: #6ECCAF;
 }

@@ -1,0 +1,1 @@
+var ezustkarasz_kg  =prompt("Hozzáadandó(kg): ")

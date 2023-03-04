@@ -16,180 +16,455 @@
                 <h3>Pecaverseny 2023</h3>
             </header>
         </div>
+        <!--Példa kártya-->
         <div>
-            <table>
-                <tr>
-                    <th class="cimsor elso_o">Faj:</th>
-                    <th class="cimsor">Darabszám-Zsolti:</th>
-                    <th class="cimsor">Össztömeg-Zsolti:</th>
-                    <th class="cimsor">Darabszám-Dominik:</th>
-                    <th class="cimsor">Össztömeg-Dominik:</th>
-                    <th class="cimsor">Elvárandó(Kg):</th>
-                </tr>
-                
-                <tr>
-                    <td onclick="ezustkaraszadat()" id="ezustkarasz" class="elso_o">Ezüstkárász</td>
-                    <td type="number" id="ezustkarasz_kg" class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="elvarando">5kg</td>
-                </tr>
-                
-                <tr>
-                    <td id="egyeb_keszegek" class="elso_o">Egyéb keszegfélék</td>
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="elvarando">5kg</td>
-                </tr>
-                <tr>
-                    <td id="jaszkeszeg" class="elso_o">Jászkeszeg</td>
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="elvarando">7kg</td>
-                </tr>
-                <tr>
-                    <td id="deverkeszeg" class="elso_o">Dévérkeszeg</td>
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="elvarando">10kg</td>
-                </tr>
-                <tr>
-                    <td id="suger" class="elso_o">Sügér</td>
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td>
-                    <td class="kozepsok"></td>
-                    <td class="elvarando">7kg</td>
-                </tr>
-                <tr>
-                    <td id="kosullo" class="elso_o">Kősüllő</td>
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="elvarando">5kg</td>
-                </tr>
-                <tr>
-                    <td id="fogassullo" class="elso_o">Fogassüllő</td>
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="elvarando">20kg</td>
-                </tr>
-                <tr>
-                    <td id="csuka" class="elso_o">Csuka</td>
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="elvarando">15kg</td>
-                </tr>
-                <tr>
-                    <td id="balin" class="elso_o">Balin</td>
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="elvarando">20kg</td>
-                </tr>
-                <tr>
-                    <td id="ponty" class="elso_o">Ponty</td>
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="elvarando">50kg</td>
-                </tr>
-                <tr>
-                    <td id="amur" class="elso_o">Amúr</td>
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="elvarando">20kg</td>
-                </tr>
-                <tr>
-                    <td id="marna" class="elso_o">Márna</td>
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="elvarando">10kg</td>
-                </tr>
-                <tr>
-                    <td id="busa" class="elso_o">Busa</td>
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="elvarando">50kg</td>
-                </tr>
-                <tr>
-                    <td id="compo" class="elso_o">Compó</td>
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="elvarando">5kg</td>
-                </tr>
-                <tr>
-                    <td id="harcsa" class="elso_o">Harcsa</td>
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="elvarando">100kg</td>
-                </tr>
-                <tr>
-                    <td id="sebes" class="elso_o">Sebes pisztráng</td>
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="elvarando">3kg</td>
-                </tr>
-                <tr>
-                    <td id="szivarvanyos" class="elso_o">Szivárványos pisztráng</td>
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="elvarando">3kg</td>
-                </tr>
-                <tr>
-                    <td id="kecsege" class="elso_o">Kecsege</td>
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="elvarando">10kg</td>
-                </tr>
-                <tr>
-                    <td id="menyhal" class="elso_o">Menyhal</td>
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="elvarando">4kg</td>
-                </tr>
-                <tr>
-                    <td id="angolna" class="elso_o">Angolna</td>
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="kozepsok"></td><!--Ebbe a sorba változtathatóak az adatok!-->
-                    <td class="elvarando">5kg</td>
-                </tr>
-            </table>
+            <div class="peldakartya">
+                <div class="kep" >
+
+                    <h2>Halfaj</h2>
+                </div>
+                <div class="kitolto" >
+                    <ul>
+                        <li>Darabszám-Zsolti:</li>
+                        <li class="adatmezo">X db</li>
+                        <li>Össztömeg-Zsolti:</li>
+                        <li class="adatmezo">X kg</li>
+                    </ul>
+                    <ul>
+                        <li>Darabszám-Dominik:</li>
+                        <li class="adatmezo">X db</li>
+                        <li>Össztömeg-Dominik:</li>
+                        <li class="adatmezo">X kg</li>
+                    </ul>
+                </div>
+                <h2>Elvárandó(Kg): X kg</h2>
+            </div>
+        <!--Példa kártya vége-->
+
+        <!--Tartalom-->
+        <div class="kartyak">
+            <div class="adatkartya">
+                <div id="ezustkarasz"class="kep" >
+                    
+                    <h2>Ezüstkárász</h2>
+                </div>
+                <div class="kitolto" >
+                    <ul>
+                        <li>Darabszám-Zsolti:</li>
+                        <li class="adatmezo"></li>
+                        <li>Össztömeg-Zsolti:</li>
+                        <li class="adatmezo"></li>
+                    </ul>
+                    <ul>
+                        <li>Darabszám-Dominik:</li>
+                        <li class="adatmezo"></li>
+                        <li>Össztömeg-Dominik:</li>
+                        <li class="adatmezo"></li>
+                    </ul>
+                </div>
+                <h2 class="elvarando">Elvárandó(Kg):  5kg</h2>
+            </div>
+
+            <div class="adatkartya">
+                <div id="egyebkeszegek" class="kep" >
+                    <h2>Egyéb keszegfélék</h2>
+                </div>
+                <div class="kitolto" >
+                    <ul>
+                        <li>Darabszám-Zsolti:</li>
+                        <li class="adatmezo"></li>
+                        <li>Össztömeg-Zsolti:</li>
+                        <li class="adatmezo"></li>
+                    </ul>
+                    <ul>
+                        <li>Darabszám-Dominik:</li>
+                        <li class="adatmezo"></li>
+                        <li>Össztömeg-Dominik:</li>
+                        <li class="adatmezo"></li>
+                    </ul>
+                </div>
+                <h2 class="elvarando">Elvárandó(Kg):  5kg</h2>
+            </div>
+           
+            <div class="adatkartya">
+                <div id="jaszkeszeg" class="kep" >
+                    <h2>Jászkeszeg</h2>
+                </div>
+                <div class="kitolto" >
+                    <ul>
+                        <li>Darabszám-Zsolti:</li>
+                        <li class="adatmezo"></li>
+                        <li>Össztömeg-Zsolti:</li>
+                        <li class="adatmezo"></li>
+                    </ul>
+                    <ul>
+                        <li>Darabszám-Dominik:</li>
+                        <li class="adatmezo"></li>
+                        <li>Össztömeg-Dominik:</li>
+                        <li class="adatmezo"></li>
+                    </ul>
+                </div>
+                <h2 class="elvarando">Elvárandó(Kg):  7kg</h2>
+            </div>
+
+            <div class="adatkartya">
+                <div id="dever"  class="kep" >
+                    <h2>Dévérkeszeg</h2>
+                </div>
+                <div class="kitolto" >
+                    <ul>
+                        <li>Darabszám-Zsolti:</li>
+                        <li class="adatmezo"></li>
+                        <li>Össztömeg-Zsolti:</li>
+                        <li class="adatmezo"></li>
+                    </ul>
+                    <ul>
+                        <li>Darabszám-Dominik:</li>
+                        <li class="adatmezo"></li>
+                        <li>Össztömeg-Dominik:</li>
+                        <li class="adatmezo"></li>
+                    </ul>
+                </div>
+                <h2 class="elvarando">Elvárandó(Kg):  10kg</h2>
+            </div>
+
+            <div class="adatkartya">
+                <div id="suger"  class="kep" >
+                    <h2>Sügér</h2>
+                </div>
+                <div class="kitolto" >
+                    <ul>
+                        <li>Darabszám-Zsolti:</li>
+                        <li class="adatmezo"></li>
+                        <li>Össztömeg-Zsolti:</li>
+                        <li class="adatmezo"></li>
+                    </ul>
+                    <ul>
+                        <li>Darabszám-Dominik:</li>
+                        <li class="adatmezo"></li>
+                        <li>Össztömeg-Dominik:</li>
+                        <li class="adatmezo"></li>
+                    </ul>
+                </div>
+                <h2 class="elvarando">Elvárandó(Kg):  7kg</h2>
+            </div>
+
+            <div class="adatkartya">
+                <div id="kosullo"  class="kep" >
+                    <h2>Kősüllő</h2>
+                </div>
+                <div class="kitolto" >
+                    <ul>
+                        <li>Darabszám-Zsolti:</li>
+                        <li class="adatmezo"></li>
+                        <li>Össztömeg-Zsolti:</li>
+                        <li class="adatmezo"></li>
+                    </ul>
+                    <ul>
+                        <li>Darabszám-Dominik:</li>
+                        <li class="adatmezo"></li>
+                        <li>Össztömeg-Dominik:</li>
+                        <li class="adatmezo"></li>
+                    </ul>
+                </div>
+                <h2 class="elvarando">Elvárandó(Kg):  5kg</h2>
+            </div>
+
+            <div  class="adatkartya">
+                <div id="fogassullo"  class="kep" >
+                    <h2>Fogassüllő</h2>
+                </div>
+                <div class="kitolto" >
+                    <ul>
+                        <li>Darabszám-Zsolti:</li>
+                        <li class="adatmezo"></li>
+                        <li>Össztömeg-Zsolti:</li>
+                        <li class="adatmezo"></li>
+                    </ul>
+                    <ul>
+                        <li>Darabszám-Dominik:</li>
+                        <li class="adatmezo"></li>
+                        <li>Össztömeg-Dominik:</li>
+                        <li class="adatmezo"></li>
+                    </ul>
+                </div>
+                <h2 class="elvarando">Elvárandó(Kg):  20kg</h2>
+            </div>
+
+            <div class="adatkartya">
+                <div id="csuka"  class="kep" >
+                    <h2>Csuka</h2>
+                </div>
+                <div class="kitolto" >
+                    <ul>
+                        <li>Darabszám-Zsolti:</li>
+                        <li class="adatmezo"></li>
+                        <li>Össztömeg-Zsolti:</li>
+                        <li class="adatmezo"></li>
+                    </ul>
+                    <ul>
+                        <li>Darabszám-Dominik:</li>
+                        <li class="adatmezo"></li>
+                        <li>Össztömeg-Dominik:</li>
+                        <li class="adatmezo"></li>
+                    </ul>
+                </div>
+                <h2 class="elvarando">Elvárandó(Kg):  15kg</h2>
+            </div>
+
+            <div class="adatkartya">
+                <div id="balin"  class="kep" >
+                    <h2>Balin</h2>
+                </div>
+                <div class="kitolto" >
+                    <ul>
+                        <li>Darabszám-Zsolti:</li>
+                        <li class="adatmezo"></li>
+                        <li>Össztömeg-Zsolti:</li>
+                        <li class="adatmezo"></li>
+                    </ul>
+                    <ul>
+                        <li>Darabszám-Dominik:</li>
+                        <li class="adatmezo"></li>
+                        <li>Össztömeg-Dominik:</li>
+                        <li class="adatmezo"></li>
+                    </ul>
+                </div>
+                <h2 class="elvarando">Elvárandó(Kg):  20kg</h2>
+            </div>
+
+            <div class="adatkartya">
+                <div id="ponty"  class="kep" >
+                    <h2>Ponty</h2>
+                </div>
+                <div class="kitolto" >
+                    <ul>
+                        <li>Darabszám-Zsolti:</li>
+                        <li class="adatmezo"></li>
+                        <li>Össztömeg-Zsolti:</li>
+                        <li class="adatmezo"></li>
+                    </ul>
+                    <ul>
+                        <li>Darabszám-Dominik:</li>
+                        <li class="adatmezo"></li>
+                        <li>Össztömeg-Dominik:</li>
+                        <li class="adatmezo"></li>
+                    </ul>
+                </div>
+                <h2 class="elvarando">Elvárandó(Kg):  50kg</h2>
+            </div>
+
+            <div class="adatkartya">
+                <div id="amur"  class="kep" >
+                    <h2>Amúr</h2>
+                </div>
+                <div class="kitolto" >
+                    <ul>
+                        <li>Darabszám-Zsolti:</li>
+                        <li class="adatmezo"></li>
+                        <li>Össztömeg-Zsolti:</li>
+                        <li class="adatmezo"></li>
+                    </ul>
+                    <ul>
+                        <li>Darabszám-Dominik:</li>
+                        <li class="adatmezo"></li>
+                        <li>Össztömeg-Dominik:</li>
+                        <li class="adatmezo"></li>
+                    </ul>
+                </div>
+                <h2 class="elvarando">Elvárandó(Kg):  20kg</h2>
+            </div>
+            
+            <div class="adatkartya">
+                <div id="marna" class="kep" >
+                    <h2>Márna</h2>
+                </div>
+                <div class="kitolto" >
+                    <ul>
+                        <li>Darabszám-Zsolti:</li>
+                        <li class="adatmezo"></li>
+                        <li>Össztömeg-Zsolti:</li>
+                        <li class="adatmezo"></li>
+                    </ul>
+                    <ul>
+                        <li>Darabszám-Dominik:</li>
+                        <li class="adatmezo"></li>
+                        <li>Össztömeg-Dominik:</li>
+                        <li class="adatmezo"></li>
+                    </ul>
+                </div>
+                <h2 class="elvarando">Elvárandó(Kg):  10kg</h2>
+            </div>
+
+            <div class="adatkartya">
+                <div id="busa" class="kep" >
+                    <h2>Busa</h2>
+                </div>
+                <div class="kitolto" >
+                    <ul>
+                        <li>Darabszám-Zsolti:</li>
+                        <li class="adatmezo"></li>
+                        <li>Össztömeg-Zsolti:</li>
+                        <li class="adatmezo"></li>
+                    </ul>
+                    <ul>
+                        <li>Darabszám-Dominik:</li>
+                        <li class="adatmezo"></li>
+                        <li>Össztömeg-Dominik:</li>
+                        <li class="adatmezo"></li>
+                    </ul>
+                </div>
+                <h2 class="elvarando">Elvárandó(Kg):  50kg</h2>
+            </div>
+
+            <div class="adatkartya">
+                <div id="harcsa" class="kep" >
+                    <h2>Harcsa</h2>
+                </div>
+                <div class="kitolto" >
+                    <ul>
+                        <li>Darabszám-Zsolti:</li>
+                        <li class="adatmezo"></li>
+                        <li>Össztömeg-Zsolti:</li>
+                        <li class="adatmezo"></li>
+                    </ul>
+                    <ul>
+                        <li>Darabszám-Dominik:</li>
+                        <li class="adatmezo"></li>
+                        <li>Össztömeg-Dominik:</li>
+                        <li class="adatmezo"></li>
+                    </ul>
+                </div>
+                <h2 class="elvarando">Elvárandó(Kg):  100kg</h2>
+            </div>
+
+            <div class="adatkartya">
+                <div id="sebespisztrang"  class="kep" >
+                    <h2>Sebes pisztráng</h2>
+                </div>
+                <div class="kitolto" >
+                    <ul>
+                        <li>Darabszám-Zsolti:</li>
+                        <li class="adatmezo"></li>
+                        <li>Össztömeg-Zsolti:</li>
+                        <li class="adatmezo"></li>
+                    </ul>
+                    <ul>
+                        <li>Darabszám-Dominik:</li>
+                        <li class="adatmezo"></li>
+                        <li>Össztömeg-Dominik:</li>
+                        <li class="adatmezo"></li>
+                    </ul>
+                </div>
+                <h2 class="elvarando">Elvárandó(Kg):  3kg</h2>
+            </div>
+
+            <div class="adatkartya">
+                <div id="szivarvanyos"  class="kep" >
+                    <h2>Szivárványos pisztráng</h2>
+                </div>
+                <div class="kitolto" >
+                    <ul>
+                        <li>Darabszám-Zsolti:</li>
+                        <li class="adatmezo"></li>
+                        <li>Össztömeg-Zsolti:</li>
+                        <li class="adatmezo"></li>
+                    </ul>
+                    <ul>
+                        <li>Darabszám-Dominik:</li>
+                        <li class="adatmezo"></li>
+                        <li>Össztömeg-Dominik:</li>
+                        <li class="adatmezo"></li>
+                    </ul>
+                </div>
+                <h2 class="elvarando">Elvárandó(Kg):  3kg</h2>
+            </div>
+
+            <div   class="adatkartya">
+                <div id="kecsege" class="kep" >
+                    <h2>Kecsege</h2>
+                </div>
+                <div class="kitolto" >
+                    <ul>
+                        <li>Darabszám-Zsolti:</li>
+                        <li class="adatmezo"></li>
+                        <li>Össztömeg-Zsolti:</li>
+                        <li class="adatmezo"></li>
+                    </ul>
+                    <ul>
+                        <li>Darabszám-Dominik:</li>
+                        <li class="adatmezo"></li>
+                        <li>Össztömeg-Dominik:</li>
+                        <li class="adatmezo"></li>
+                    </ul>
+                </div>
+                <h2 class="elvarando">Elvárandó(Kg): 10 kg</h2>
+            </div>
+
+            <div class="adatkartya">
+                <div id="menyhal"   class="kep" >
+                    <h2>Menyhal</h2>
+                </div>
+                <div class="kitolto" >
+                    <ul>
+                        <li>Darabszám-Zsolti:</li>
+                        <li class="adatmezo"></li>
+                        <li>Össztömeg-Zsolti:</li>
+                        <li class="adatmezo"></li>
+                    </ul>
+                    <ul>
+                        <li>Darabszám-Dominik:</li>
+                        <li class="adatmezo"></li>
+                        <li>Össztömeg-Dominik:</li>
+                        <li class="adatmezo"></li>
+                    </ul>
+                </div>
+                <h2 class="elvarando">Elvárandó(Kg):  4kg</h2>
+            </div>
+
+            <div   class="adatkartya">
+                <div id="angolna" class="kep" >
+                    <h2>Angolna</h2>
+                </div>
+                <div class="kitolto" >
+                    <ul>
+                        <li>Darabszám-Zsolti:</li>
+                        <li class="adatmezo"></li>
+                        <li>Össztömeg-Zsolti:</li>
+                        <li class="adatmezo"></li>
+                    </ul>
+                    <ul>
+                        <li>Darabszám-Dominik:</li>
+                        <li class="adatmezo"></li>
+                        <li>Össztömeg-Dominik:</li>
+                        <li class="adatmezo"></li>
+                    </ul>
+                </div>
+                <h2 class="elvarando">Elvárandó(Kg):  5kg</h2>
+            </div>
+
+            <div   class="adatkartya">
+                <div id="compo" class="kep" >
+                    <h2>Compó</h2>
+                </div>
+                <div class="kitolto" >
+                    <ul>
+                        <li>Darabszám-Zsolti:</li>
+                        <li class="adatmezo"></li>
+                        <li>Össztömeg-Zsolti:</li>
+                        <li class="adatmezo"></li>
+                    </ul>
+                    <ul>
+                        <li>Darabszám-Dominik:</li>
+                        <li class="adatmezo"></li>
+                        <li>Össztömeg-Dominik:</li>
+                        <li class="adatmezo"></li>
+                    </ul>
+                </div>
+                <h2 class="elvarando">Elvárandó(Kg):  5kg</h2>
+            </div>
         </div>
      </div>
+    <!--Tartalom vége-->
 </body>
 </html>

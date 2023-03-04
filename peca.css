@@ -21,11 +21,11 @@ header{
 .oldal{
     text-align: center;
     background-color: antiquewhite;
-    width: 35rem;
+    width: fit-content;
     list-style: none;
     margin-top: 5px;
     margin-bottom: 5px;
-    height: fit-content;
+    
     font-size: 50px;
 }
 
@@ -213,4 +213,9 @@ header{
     background-image:url(IMG/angolna.png) ;
     background-size:cover;
     background-repeat: no-repeat;
+}
+@media  (max-width:1765px){
+    .top{
+        justify-content: center;
+    }
 }

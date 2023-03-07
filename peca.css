@@ -21,14 +21,21 @@ header{
 .oldal{
     text-align: center;
     background-color: antiquewhite;
-    width: fit-content;
+    width: 100%;
     list-style: none;
     margin-top: 5px;
     margin-bottom: 5px;
-    
+    padding-left: 5px;
+    padding-right: 5px;
     font-size: 50px;
 }
-
+.kitolto{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    
+}
 .top{
     display: flex;
     flex-direction: row;
@@ -57,6 +64,7 @@ header{
     margin: 30px;
     padding-right: 15px;
     padding-left: 15px;
+    padding-bottom: 20px;
     background: rgb(77,109,121);
     background: linear-gradient(180deg, rgba(77,109,121,1) 0%, rgba(16,19,33,1) 100%);
     width: 45em;
@@ -86,7 +94,7 @@ header{
     padding-left: 15px;
     background: rgb(77,109,121);
     background: linear-gradient(180deg, rgba(77,109,121,1) 0%, rgba(16,19,33,1) 100%);
-    width: 250px;
+    width: 280px;
     box-shadow: 0px 0px 37px 11px rgba(0,43,91,0.81);
     -webkit-box-shadow: 0px 0px 37px 11px rgba(0,43,91,0.81);
     -moz-box-shadow: 0px 0px 37px 11px rgba(0,43,91,0.81);
@@ -214,8 +222,52 @@ header{
     background-size:cover;
     background-repeat: no-repeat;
 }
+.elvarando{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    letter-spacing: 1px;
+    color:rgb(190, 190, 190) ;
+}
 @media  (max-width:1765px){
     .top{
         justify-content: center;
+    }
+}
+@media (max-width:610px){
+    .peldakartya{
+        width: 85%;
+    }
+    .oldal{
+        font-size: 40px;
+        
+    }
+    .tartalom{
+        margin-left:25px;
+        margin-right: 25px;
+    }
+}
+@media (max-width:495px){
+    .peldakartya{
+        width: 75%;
+    }
+    .oldal{
+        font-size:35px;
+    }
+    .tartalom{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+@media (max-width:495px){
+    .peldakartya{
+        width: 65%;
+    }
+    .oldal{
+        font-size:30px;
+        width: 95%;
+    }
+    .tartalom{
+        margin-left: 0px;
+        margin-right: 0px;
     }
 }

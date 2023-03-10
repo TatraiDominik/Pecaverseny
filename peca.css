@@ -30,7 +30,7 @@ a{
 }
 .oldal{
     text-align: center;
-    background-color: antiquewhite;
+    
     width: 100%;
     list-style: none;
     margin-top: 5px;
@@ -38,7 +38,112 @@ a{
     padding-left: 5px;
     padding-right: 5px;
     font-size: 50px;
+    cursor: pointer;
+    transition: 0.6s;
+    position: relative;
+    background-color: white;
+
+    z-index:1;
+  
 }
+
+#HALDORADO::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #244e83;
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0; 
+    
+}
+#HALDORADO:hover::before {
+    opacity: 1;
+  }
+#FOX_RAGE::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #c44149;
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0; 
+    
+}
+#FOX_RAGE:hover::before {
+    opacity: 1;
+  }
+
+#ENERGO::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #f5af40;
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0; 
+    
+}
+#ENERGO:hover::before {
+    opacity: 1;
+  }
+#FEEDERMANIA::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #fe5000;
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0; 
+    
+}
+#FEEDERMANIA:hover::before {
+    opacity: 1;
+  }
+#HALCATRAZ::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #2a2a28;
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0; 
+    
+}
+#HALCATRAZ:hover::before {
+    opacity: 1;
+  }
+#VARSZEGI::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;    
+    background-color: #beb8a0;
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0; 
+    
+}
+#VARSZEGI:hover::before {
+    opacity: 1;
+  }      
 .kitolto{
     display: flex;
     flex-direction: column;
@@ -108,6 +213,7 @@ a{
     -webkit-box-shadow: 0px 0px 37px 11px rgba(0,43,91,0.81);
     -moz-box-shadow: 0px 0px 37px 11px rgba(0,43,91,0.81);
     
+    
 
 }
 .adatmezo{
@@ -126,7 +232,9 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 120%;
+    text-shadow: 4px -2px 4px rgb(255,255,255);
 }
 #ezustkarasz{
     background-image:url(IMG/ezustkarasz.png) ;
@@ -306,5 +414,9 @@ a{
         -webkit-box-shadow: 0px 0px 37px 11px rgba(48, 136, 236, 0.81);
         -moz-box-shadow: 0px 0px 37px 11px rgba(48, 136, 236, 0.81);}
 }
+
+    
+
+
 
 

@@ -30,7 +30,7 @@ a{
 }
 .oldal{
     text-align: center;
-    
+    color: black;
     width: 100%;
     list-style: none;
     margin-top: 5px;
@@ -120,12 +120,30 @@ a{
     bottom: 0;
     left: 0;
     background-color: #2a2a28;
+    
     z-index: -1;
     transition: opacity 0.5s linear;
     opacity: 0; 
     
 }
 #HALCATRAZ:hover::before {
+    opacity: 1;
+  }
+  #XFISH::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #8bd829;
+    
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0; 
+    
+}
+#XFISH:hover::before {
     opacity: 1;
   }
 #VARSZEGI::before{

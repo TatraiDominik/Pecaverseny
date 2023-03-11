@@ -5,9 +5,10 @@ let ezust_karasz={
     d_db:Number(),
     d_kg:parseFloat(Number())
 };
+localStorage.setItem(ezust_karasz);
 {
 function ezust_szamolas(){
-    
+    localStorage.getItem(ezust_karasz)
     let versenyzo= prompt("Kérlek add meg a neved kezdőbetűjét!");
     if(versenyzo =="zs" || a_versenyzo=="Zs"){
         let zs_db_adat= Number(document.getElementById("zs_ezust_db").innerHTML);

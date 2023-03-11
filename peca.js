@@ -6,7 +6,7 @@ let ezust_karasz={
     d_kg:parseFloat(Number())
 };
 
-{
+
 function ezust_szamolas(){
     
     let versenyzo= prompt("Kérlek add meg a neved kezdőbetűjét!");
@@ -38,7 +38,7 @@ function ezust_szamolas(){
     }
     
 } 
-}
+
 // ezustkarasz vege
 
 //egyebkeszegek

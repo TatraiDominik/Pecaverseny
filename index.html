@@ -61,22 +61,24 @@
         <!--Tartalom-->
         <div class="kartyak">
             <div class="adatkartya">
-                <div id="ezustkarasz"class="kep" >
+                
+                <div onclick="ezust_szamolas()" id="ezustkarasz" class="kep" >
                     
                     <h2>Ezüstkárász</h2>
                 </div>
+                
                 <div class="kitolto" >
-                    <ul>
+                    <ul id="ezust">
                         <li>Darabszám-Zsolti:</li>
-                        <li type="number" id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="zs_ezust_db" class="adatmezo"></li>
                         <li>Össztömeg-Zsolti:</li>
-                        <li type="number" id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="zs_ezust_kg" class="adatmezo"></li>
                     </ul>
                     <ul>
                         <li>Darabszám-Dominik:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="d_ezust_db"  class="adatmezo"></li>
                         <li>Össztömeg-Dominik:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="d_ezust_kg"  class="adatmezo"></li>
                     </ul>
                 </div>
                 <h2 class="elvarando">Elvárandó(Kg):  5kg</h2>

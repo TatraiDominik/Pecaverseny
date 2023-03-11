@@ -41,6 +41,7 @@ function ezust_szamolas(){
 // ezustkarasz vege
 
 //egyebkeszegek
+{
 let egyebkeszegek={
     zs_db: Number(),
     zs_kg:parseFloat(Number()) ,
@@ -77,5 +78,6 @@ function egyebkeszeg_szamolas(){
         window.alert("Nincs ilyen versenyző!");
     }
     
+}
 } 
 //egyebkeszegek vege

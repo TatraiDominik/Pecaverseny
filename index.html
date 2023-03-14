@@ -8,7 +8,7 @@
     <title>Pecaverseny2023</title>
     
 </head>
-<body onload="loadInput()">
+<body onload="adatmentes()">
 
     <div class="tartalom">
         <div>
@@ -109,21 +109,21 @@
             </div>
            
             <div class="adatkartya">
-                <div id="jaszkeszeg" class="kep" >
+                <div onclick="jaszkeszeg_szamolas()" id="jaszkeszeg" class="kep" >
                     <h2>Jászkeszeg</h2>
                 </div>
                 <div class="kitolto" >
                     <ul>
                         <li>Darabszám-Zsolti:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="zs_jasz_db" class="adatmezo"></li>
                         <li>Össztömeg-Zsolti:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="zs_jasz_kg" class="adatmezo"></li>
                     </ul>
                     <ul>
                         <li>Darabszám-Dominik:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="d_jasz_db" class="adatmezo"></li>
                         <li>Össztömeg-Dominik:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="d_jasz_kg" class="adatmezo"></li>
                     </ul>
                 </div>
                 <h2 class="elvarando">Elvárandó(Kg):  7kg</h2>
@@ -136,15 +136,15 @@
                 <div class="kitolto" >
                     <ul>
                         <li>Darabszám-Zsolti:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="zs_ _db" class="adatmezo"></li>
                         <li>Össztömeg-Zsolti:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="zs_ _db" class="adatmezo"></li>
                     </ul>
                     <ul>
                         <li>Darabszám-Dominik:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="d_ _kg" class="adatmezo"></li>
                         <li>Össztömeg-Dominik:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="d_ _kg" class="adatmezo"></li>
                     </ul>
                 </div>
                 <h2 class="elvarando">Elvárandó(Kg):  10kg</h2>
@@ -157,15 +157,15 @@
                 <div class="kitolto" >
                     <ul>
                         <li>Darabszám-Zsolti:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="zs_ _db" class="adatmezo"></li>
                         <li>Össztömeg-Zsolti:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="zs_ _db" class="adatmezo"></li>
                     </ul>
                     <ul>
                         <li>Darabszám-Dominik:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="d_ _kg" class="adatmezo"></li>
                         <li>Össztömeg-Dominik:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="d_ _kg" class="adatmezo"></li>
                     </ul>
                 </div>
                 <h2 class="elvarando">Elvárandó(Kg):  7kg</h2>
@@ -178,15 +178,15 @@
                 <div class="kitolto" >
                     <ul>
                         <li>Darabszám-Zsolti:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="zs_ _db" class="adatmezo"></li>
                         <li>Össztömeg-Zsolti:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="zs_ _db" class="adatmezo"></li>
                     </ul>
                     <ul>
                         <li>Darabszám-Dominik:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="d_ _kg" class="adatmezo"></li>
                         <li>Össztömeg-Dominik:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="d_ _kg" class="adatmezo"></li>
                     </ul>
                 </div>
                 <h2 class="elvarando">Elvárandó(Kg):  5kg</h2>
@@ -199,15 +199,15 @@
                 <div class="kitolto" >
                     <ul>
                         <li>Darabszám-Zsolti:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="zs_ _db" class="adatmezo"></li>
                         <li>Össztömeg-Zsolti:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="zs_ _db" class="adatmezo"></li>
                     </ul>
                     <ul>
                         <li>Darabszám-Dominik:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="d_ _kg" class="adatmezo"></li>
                         <li>Össztömeg-Dominik:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="d_ _kg" class="adatmezo"></li>
                     </ul>
                 </div>
                 <h2 class="elvarando">Elvárandó(Kg):  20kg</h2>
@@ -220,15 +220,15 @@
                 <div class="kitolto" >
                     <ul>
                         <li>Darabszám-Zsolti:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="zs_ _db" class="adatmezo"></li>
                         <li>Össztömeg-Zsolti:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="zs_ _db" class="adatmezo"></li>
                     </ul>
                     <ul>
                         <li>Darabszám-Dominik:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="d_ _kg" class="adatmezo"></li>
                         <li>Össztömeg-Dominik:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="d_ _kg" class="adatmezo"></li>
                     </ul>
                 </div>
                 <h2 class="elvarando">Elvárandó(Kg):  15kg</h2>
@@ -241,15 +241,15 @@
                 <div class="kitolto" >
                     <ul>
                         <li>Darabszám-Zsolti:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="zs_ _db" class="adatmezo"></li>
                         <li>Össztömeg-Zsolti:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="zs_ _db" class="adatmezo"></li>
                     </ul>
                     <ul>
                         <li>Darabszám-Dominik:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="d_ _kg" class="adatmezo"></li>
                         <li>Össztömeg-Dominik:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="d_ _kg" class="adatmezo"></li>
                     </ul>
                 </div>
                 <h2 class="elvarando">Elvárandó(Kg):  20kg</h2>
@@ -262,15 +262,15 @@
                 <div class="kitolto" >
                     <ul>
                         <li>Darabszám-Zsolti:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="zs_ _db" class="adatmezo"></li>
                         <li>Össztömeg-Zsolti:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="zs_ _db" class="adatmezo"></li>
                     </ul>
                     <ul>
                         <li>Darabszám-Dominik:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="d_ _kg" class="adatmezo"></li>
                         <li>Össztömeg-Dominik:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="d_ _kg" class="adatmezo"></li>
                     </ul>
                 </div>
                 <h2 class="elvarando">Elvárandó(Kg):  50kg</h2>
@@ -283,15 +283,15 @@
                 <div class="kitolto" >
                     <ul>
                         <li>Darabszám-Zsolti:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="zs_ _db" class="adatmezo"></li>
                         <li>Össztömeg-Zsolti:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="zs_ _db" class="adatmezo"></li>
                     </ul>
                     <ul>
                         <li>Darabszám-Dominik:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="d_ _kg" class="adatmezo"></li>
                         <li>Össztömeg-Dominik:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="d_ _kg" class="adatmezo"></li>
                     </ul>
                 </div>
                 <h2 class="elvarando">Elvárandó(Kg):  20kg</h2>
@@ -304,15 +304,15 @@
                 <div class="kitolto" >
                     <ul>
                         <li>Darabszám-Zsolti:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="zs_ _db" class="adatmezo"></li>
                         <li>Össztömeg-Zsolti:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="zs_ _db" class="adatmezo"></li>
                     </ul>
                     <ul>
                         <li>Darabszám-Dominik:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="d_ _kg" class="adatmezo"></li>
                         <li>Össztömeg-Dominik:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="d_ _kg" class="adatmezo"></li>
                     </ul>
                 </div>
                 <h2 class="elvarando">Elvárandó(Kg):  10kg</h2>
@@ -325,15 +325,15 @@
                 <div class="kitolto" >
                     <ul>
                         <li>Darabszám-Zsolti:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="zs_ _db" class="adatmezo"></li>
                         <li>Össztömeg-Zsolti:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="zs_ _db" class="adatmezo"></li>
                     </ul>
                     <ul>
                         <li>Darabszám-Dominik:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="d_ _kg" class="adatmezo"></li>
                         <li>Össztömeg-Dominik:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="d_ _kg" class="adatmezo"></li>
                     </ul>
                 </div>
                 <h2 class="elvarando">Elvárandó(Kg):  50kg</h2>
@@ -346,15 +346,15 @@
                 <div class="kitolto" >
                     <ul>
                         <li>Darabszám-Zsolti:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="zs_ _db" class="adatmezo"></li>
                         <li>Össztömeg-Zsolti:</li>
-                        <li class="adatmezo"></li>
+                        <li type="number" id="zs_ _db" class="adatmezo"></li>
                     </ul>
                     <ul>
                         <li>Darabszám-Dominik:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="d_ _kg" class="adatmezo"></li>
                         <li>Össztömeg-Dominik:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="d_ _kg" class="adatmezo"></li>
                     </ul>
                 </div>
                 <h2 class="elvarando">Elvárandó(Kg):  100kg</h2>
@@ -367,15 +367,15 @@
                 <div class="kitolto" >
                     <ul>
                         <li>Darabszám-Zsolti:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="zs_ _db" class="adatmezo"></li>
                         <li>Össztömeg-Zsolti:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="zs_ _db" class="adatmezo"></li>
                     </ul>
                     <ul>
                         <li>Darabszám-Dominik:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="d_ _kg" class="adatmezo"></li>
                         <li>Össztömeg-Dominik:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="d_ _kg" class="adatmezo"></li>
                     </ul>
                 </div>
                 <h2 class="elvarando">Elvárandó(Kg):  3kg</h2>
@@ -388,15 +388,15 @@
                 <div class="kitolto" >
                     <ul>
                         <li>Darabszám-Zsolti:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="zs_ _db" class="adatmezo"></li>
                         <li>Össztömeg-Zsolti:</li>
-                        <li id="szamadat"class="adatmezo"></li>
+                        <li type="number" id="zs_ _db" class="adatmezo"></li>
                     </ul>
                     <ul>
                         <li>Darabszám-Dominik:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="d_ _kg" class="adatmezo"></li>
                         <li>Össztömeg-Dominik:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="d_ _kg" class="adatmezo"></li>
                     </ul>
                 </div>
                 <h2 class="elvarando">Elvárandó(Kg):  3kg</h2>
@@ -409,15 +409,15 @@
                 <div class="kitolto" >
                     <ul>
                         <li>Darabszám-Zsolti:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="zs_ _db" class="adatmezo"></li>
                         <li>Össztömeg-Zsolti:</li>
-                        <li id="szamadat"class="adatmezo"></li>
+                        <li type="number" id="zs_ _db" class="adatmezo"></li>
                     </ul>
                     <ul>
                         <li>Darabszám-Dominik:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="d_ _kg" class="adatmezo"></li>
                         <li>Össztömeg-Dominik:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="d_ _kg" class="adatmezo"></li>
                     </ul>
                 </div>
                 <h2 class="elvarando">Elvárandó(Kg): 10 kg</h2>
@@ -430,15 +430,15 @@
                 <div class="kitolto" >
                     <ul>
                         <li>Darabszám-Zsolti:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="zs_ _db" class="adatmezo"></li>
                         <li>Össztömeg-Zsolti:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="zs_ _db" class="adatmezo"></li>
                     </ul>
                     <ul>
                         <li>Darabszám-Dominik:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="d_ _kg" class="adatmezo"></li>
                         <li>Össztömeg-Dominik:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li itype="number" id="d_ _kg" class="adatmezo"></li>
                     </ul>
                 </div>
                 <h2 class="elvarando">Elvárandó(Kg):  4kg</h2>
@@ -451,15 +451,15 @@
                 <div class="kitolto" >
                     <ul>
                         <li>Darabszám-Zsolti:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="zs_ _db" class="adatmezo"></li>
                         <li>Össztömeg-Zsolti:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="zs_ _db" class="adatmezo"></li>
                     </ul>
                     <ul>
                         <li>Darabszám-Dominik:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="d_ _kg" class="adatmezo"></li>
                         <li>Össztömeg-Dominik:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="d_ _kg" class="adatmezo"></li>
                     </ul>
                 </div>
                 <h2 class="elvarando">Elvárandó(Kg):  5kg</h2>
@@ -472,15 +472,15 @@
                 <div class="kitolto" >
                     <ul>
                         <li>Darabszám-Zsolti:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="zs_ _db" class="adatmezo"></li>
                         <li>Össztömeg-Zsolti:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="zs_ _db" class="adatmezo"></li>
                     </ul>
                     <ul>
                         <li>Darabszám-Dominik:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="d_ _kg" class="adatmezo"></li>
                         <li>Össztömeg-Dominik:</li>
-                        <li id="szamadat" class="adatmezo"></li>
+                        <li type="number" id="d_ _kg" class="adatmezo"></li>
                     </ul>
                 </div>
                 <h2 class="elvarando">Elvárandó(Kg):  5kg</h2>

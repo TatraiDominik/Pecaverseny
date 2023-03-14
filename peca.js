@@ -153,7 +153,58 @@ function jaszkeszeg_szamolas(){
     }
     
 }
+//JÁSZKESZEG END
 
+//DÉVÉR START
+let dever={
+    zs_db: Number(),
+    zs_kg:parseFloat(Number()) ,
+    d_db:Number(),
+    d_kg:parseFloat(Number())
+};
+
+function dever_szamolas(){
+    
+    let versenyzo= prompt("Kérlek add meg a neved kezdőbetűjét!");
+    if(versenyzo =="zs" || versenyzo=="Zs"){
+        let zs_db_adat= Number(document.getElementById("zs_dever_db").innerHTML);
+        let zs_kg_adat=parseFloat(Number(document.getElementById("zs_dever_kg").innerHTML)) ;
+        dever.zs_db=zs_db_adat;
+        dever.zs_kg=zs_kg_adat;
+        let zs_ujszam_db= parseInt(prompt("Kérlek add meg a darabszámot!"));
+        dever.zs_db+= zs_ujszam_db;
+        let zs_ujszam_kg=parseFloat(Number(prompt("Kérlek add meg a fogott hal kg-ját!"))) ;
+        dever.zs_kg+= zs_ujszam_kg;
+        Number(document.getElementById("zs_dever_db").innerHTML= dever.zs_db);
+        parseFloat(Number(document.getElementById("zs_dever_kg").innerHTML= dever.zs_kg));
+        //adatmentés START
+        let ujzsdb=document.getElementById("zs_dever_db").innerHTML;
+        localStorage.setItem("d_zs_db_input",ujzsdb);
+        let ujzskg=document.getElementById("zs_dever_kg").innerHTML;
+        localStorage.setItem("d_zs_kg_input",ujzskg);
+        //adatmentes END
+    }else if(versenyzo =="d"||versenyzo =="D"){
+        let d_db_adat= Number(document.getElementById("d_dever_db").innerHTML);
+        let d_kg_adat=parseFloat(Number(document.getElementById("d_dever_kg").innerHTML)) ;
+        dever.d_db=d_db_adat;
+        dever.d_kg=d_kg_adat;
+        let d_ujszam_db= parseInt(prompt("Kérlek add meg a darabszámot!"));
+        dever.d_db+= d_ujszam_db;
+        let d_ujszam_kg=parseFloat(Number(prompt("Kérlek add meg a fogott hal kg-ját!"))) ;
+        dever.d_kg+= d_ujszam_kg;
+        Number(document.getElementById("d_dever_db").innerHTML= dever.d_db);
+        parseFloat(Number(document.getElementById("d_dever_kg").innerHTML= dever.d_kg));
+        let ujddb=document.getElementById("d_dever_db").innerHTML;
+        localStorage.setItem("d_d_db_input",ujddb);
+        let ujdkg=document.getElementById("d_dever_kg").innerHTML;
+        localStorage.setItem("d_d_kg_input",ujdkg);
+    }
+    else{
+        window.alert("Nincs ilyen versenyző!");
+    }
+    
+}
+//DÉVÉR
 
 
 
@@ -215,4 +266,23 @@ function adatmentes(){
         document.getElementById("d_jasz_kg").innerHTML = j_d_kg_ki;
     }
     //JÁSZKESZEG END
+
+    //DÉVÉRKESZEG START
+    let d_zs_db_ki = localStorage.getItem("d_zs_db_input");
+    if (d_zs_db_ki) {
+        document.getElementById("zs_dever_db").innerHTML = d_zs_db_ki;
+    }
+    let d_zs_kg_ki = localStorage.getItem("d_zs_kg_input");
+    if (d_zs_kg_ki) {
+        document.getElementById("zs_dever_kg").innerHTML = d_zs_kg_ki;
+    }
+    let d_d_db_ki = localStorage.getItem("d_d_db_input");
+    if (d_d_db_ki) {
+        document.getElementById("d_dever_db").innerHTML = d_d_db_ki;
+    }
+    let d_d_kg_ki = localStorage.getItem("d_d_kg_input");
+    if (d_d_kg_ki) {
+        document.getElementById("d_dever_kg").innerHTML = d_d_kg_ki;
+    }
+    //DÉVÉRKESZEG END
 }

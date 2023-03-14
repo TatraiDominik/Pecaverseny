@@ -5,11 +5,13 @@ let ezust_karasz={
     d_db:Number(),
     d_kg:parseFloat(Number())
 };
-{
+
+
+
 function ezust_szamolas(){
     
     let versenyzo= prompt("Kérlek add meg a neved kezdőbetűjét!");
-    if(versenyzo =="zs" || a_versenyzo=="Zs"){
+    if(versenyzo =="zs" || versenyzo=="Zs"){
         let zs_db_adat= Number(document.getElementById("zs_ezust_db").innerHTML);
         let zs_kg_adat=parseFloat(Number(document.getElementById("zs_ezust_kg").innerHTML)) ;
         ezust_karasz.zs_db=zs_db_adat;
@@ -19,8 +21,14 @@ function ezust_szamolas(){
         let zs_ujszam_kg=parseFloat(Number(prompt("Kérlek add meg a fogott hal kg-ját!"))) ;
         ezust_karasz.zs_kg+= zs_ujszam_kg;
         Number(document.getElementById("zs_ezust_db").innerHTML= ezust_karasz.zs_db);
+        let ujzsdb=document.getElementById("zs_ezust_db").innerHTML;
+        localStorage.setItem("db_input",ujzsdb);
         parseFloat(Number(document.getElementById("zs_ezust_kg").innerHTML= ezust_karasz.zs_kg));
+        let ujzskg=document.getElementById("zs_ezust_kg").innerHTML;
+        localStorage.setItem("kg_Input",ujzskg);
     }else if(versenyzo =="d"||versenyzo =="D"){
+        
+
         let d_db_adat= Number(document.getElementById("d_ezust_db").innerHTML);
         let d_kg_adat=parseFloat(Number(document.getElementById("d_ezust_kg").innerHTML)) ;
         ezust_karasz.d_db=d_db_adat;
@@ -35,9 +43,24 @@ function ezust_szamolas(){
     else{
         window.alert("Nincs ilyen versenyző!");
     }
-    
-} 
+
 }
+
+
+
+function loadInput() {
+
+    let ezust_db_ki = localStorage.getItem("db_input");
+    if (ezust_db_ki ) {
+        document.getElementById("zs_ezust_db").innerHTML = ezust_db_ki ;
+    }
+    let userInputki = localStorage.getItem("kg_Input");
+    if (userInputki ) {
+        document.getElementById("zs_ezust_kg").innerHTML = userInputki ;
+    }
+}
+
+
 // ezustkarasz vege
 
 //egyebkeszegek
@@ -47,6 +70,7 @@ let egyebkeszegek={
     d_db:Number(),
     d_kg:parseFloat(Number())
 };
+
 function egyebkeszeg_szamolas(){
     
     let versenyzo= prompt("Kérlek add meg a neved kezdőbetűjét!");

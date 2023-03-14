@@ -5,9 +5,7 @@ let ezust_karasz={
     d_db:Number(),
     d_kg:parseFloat(Number())
 };
-
-
-
+{
 function ezust_szamolas(){
     
     let versenyzo= prompt("Kérlek add meg a neved kezdőbetűjét!");
@@ -43,27 +41,13 @@ function ezust_szamolas(){
     else{
         window.alert("Nincs ilyen versenyző!");
     }
-
+    
+} 
 }
-
-
-
-function loadInput() {
-
-    let ezust_db_ki = localStorage.getItem("db_input");
-    if (ezust_db_ki ) {
-        document.getElementById("zs_ezust_db").innerHTML = ezust_db_ki ;
-    }
-    let userInputki = localStorage.getItem("kg_Input");
-    if (userInputki ) {
-        document.getElementById("zs_ezust_kg").innerHTML = userInputki ;
-    }
-}
-
-
 // ezustkarasz vege
 
 //egyebkeszegek
+{
 let egyebkeszegek={
     zs_db: Number(),
     zs_kg:parseFloat(Number()) ,
@@ -101,5 +85,6 @@ function egyebkeszeg_szamolas(){
         window.alert("Nincs ilyen versenyző!");
     }
     
+}
 } 
 //egyebkeszegek vege

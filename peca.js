@@ -1,3 +1,4 @@
+
 //ezustkarasz
 let ezust_karasz={
     zs_db: Number(),
@@ -326,6 +327,12 @@ function kosullo_szamolas(){
 
 //ADATMENTÉS
 function adatmentes(){
+    //TILALMI IDŐ ELLENŐRZÉS START
+
+
+
+        
+    //TILALMI IDŐ END
     //Ezüstkárász START
     let zs_db_ki = localStorage.getItem("zs_db_input");
     if (zs_db_ki) {

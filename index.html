@@ -213,7 +213,7 @@
                 <h2 class="elvarando">Elvárandó(Kg):  20kg</h2>
             </div>
 
-            <div class="adatkartya">
+            <div id="csuka-anim" class="adatkartya csuka-tilalom">
                 <div id="csuka"  class="kep" >
                     <h2>Csuka</h2>
                 </div>
@@ -489,5 +489,68 @@
      </div>
     <!--Tartalom vége-->
     <script src="peca.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script>
+        let jelenlegi_datum=new Date();
+        let jelenlegi_honap= jelenlegi_datum.getMonth();
+        let jelenlegi_nap= jelenlegi_datum.getDate();
+        if(jelenlegi_honap==2 || jelenlegi_honap==3){
+            $(".csuka-tilalom").css({
+                "border-color":"#A70C0C",
+                "box-shadow":"0px 0px 37px 11px rgba(116,25,25,0.81)",
+                "-webkit-box-shadow ":"0px 0px 37px 11px rgba(116,25,25,0.81)",
+                "-moz-box-shadow":"0px 0px 37px 11px rgba(116,25,25,0.81)"
+            });
+            const styleEl = $('<style>');
+
+            // Define the keyframes animation
+            const animation = `
+            @keyframes my-animation {
+              0% {
+                  border-color:#A70C0C ;
+                  box-shadow: 0px 0px 37px 11px rgba(170, 35, 35, 0.81);
+                  -webkit-box-shadow: 0px 0px 37px 11px rgba(48, 136, 236, 0.81);
+                  -moz-box-shadow: 0px 0px 37px 11px rgba(48, 136, 236, 0.81);
+              }
+              25%{border-color:#a52828 ;}
+              50%{border-color:#c20303 ;
+                  box-shadow: 0px 0px 37px 11px rgba(116, 25, 25, 0.81);
+                  -webkit-box-shadow: 0px 0px 37px 11px rgba(116, 25, 25, 0.81);
+                  -moz-box-shadow: 0px 0px 37px 11px rgba(116, 25, 25, 0.81);}
+              75%{border-color:#a52828 ;}
+              100% {
+                  border-color:#A70C0C ;
+                  box-shadow: 0px 0px 37px 11px rgba(170, 35, 35, 0.81);
+                  -webkit-box-shadow: 0px 0px 37px 11px rgba(170, 35, 35, 0.81);
+                  -moz-box-shadow: 0px 0px 37px 11px rgba(170, 35, 35, 0.81);
+              }
+            }
+          `;
+            
+            // Add the animation to the style element
+            styleEl.text(animation);
+            
+            // Add the style element to the document head
+            $('head').append(styleEl);
+            
+            // Apply the animation on hover to the element with ID "my-element"
+            $('#csuka-anim').hover(
+              function() {
+                $(this).css({
+                    "animation":"my-animation 4s infinite"
+                });
+              },
+              function() {
+                $(this).css({
+                  'animation-name': '',
+                  'animation-duration': '',
+                  'animation-iteration-count': ''
+                });
+              }
+            );
+        }    
+
+        
+    </script>
 </body>
 </html>

@@ -409,6 +409,7 @@ a{
         margin-right: 0px;
     }
 }
+
 .adatkartya:hover{
     animation: oldalsav 4s infinite;
     cursor: pointer;

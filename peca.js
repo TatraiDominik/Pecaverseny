@@ -38,10 +38,10 @@ function ezust_szamolas(){
         let d_ujszam_kg=parseFloat(Number(prompt("Kérlek add meg a fogott hal kg-ját!"))) ;
         ezust_karasz.d_kg+= d_ujszam_kg;
         Number(document.getElementById("d_ezust_db").innerHTML= ezust_karasz.d_db);
-        let ujddb=document.getElementById("zs_ezust_db").innerHTML;
+        let ujddb=document.getElementById("d_ezust_db").innerHTML;
         localStorage.setItem("d_db_input",ujddb);
         parseFloat(Number(document.getElementById("d_ezust_kg").innerHTML= ezust_karasz.d_kg));
-        let ujdkg=document.getElementById("zs_ezust_kg").innerHTML;
+        let ujdkg=document.getElementById("d_ezust_kg").innerHTML;
         localStorage.setItem("d_kg_Input",ujdkg);
     }
     else{
